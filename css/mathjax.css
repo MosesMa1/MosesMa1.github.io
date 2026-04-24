@@ -1,0 +1,23 @@
+/* MathJax 3 支持 */
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
+
+/* 数学公式容器样式 */
+.katex {
+    font-size: 1.1em;
+}
+
+.math {
+    padding: 0.5rem 0;
+}
+
+/* 行内公式 */
+.math.inline {
+    display: inline;
+}
+
+/* 块级公式 */
+.math.display {
+    display: block;
+    padding: 1rem 0;
+    overflow-x: auto;
+}
