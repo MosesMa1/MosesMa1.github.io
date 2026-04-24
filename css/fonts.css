@@ -21,6 +21,23 @@
     font-weight: 700;
 }
 
+/* 霞鹜文楷字体定义 */
+@font-face {
+    font-family: "霞鹜文楷";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.jsdelivr.net/gh/lxgw/LxgwWenKai/fonts/LxgwWenKai-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "霞鹜文楷";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn.jsdelivr.net/gh/lxgw/LxgwWenKai/fonts/LxgwWenKai-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
 @font-face {
     font-family: "Local LXGW WenKai";
     font-style: normal;
