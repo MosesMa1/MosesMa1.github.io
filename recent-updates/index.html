@@ -89,6 +89,60 @@
         };
     </script>
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Mermaid diagram support -->
+    <script async src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        if (typeof mermaid !== 'undefined') {
+            mermaid.initialize({ 
+                startOnLoad: true,
+                theme: 'neutral',
+                logLevel: 'warn',
+                securityLevel: 'loose',
+                flowchart: {
+                    useMaxWidth: true,
+                    htmlLabels: true,
+                    curve: 'linear'
+                },
+                graph: {
+                    useMaxWidth: true
+                },
+                gitGraph: {
+                    useMaxWidth: true
+                },
+                sequence: {
+                    useMaxWidth: true,
+                    mirrorActors: true
+                },
+                sequenceDiagram: {
+                    actorFontSize: 14,
+                    labelBoxBkColor: '#f0f0f0',
+                    noteBkColor: '#fff8e1'
+                }
+            });
+            mermaid.contentLoaded();
+        }
+    </script>
+    <!-- Mermaid 美化CSS -->
+    <style>
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            font-family: inherit;
+        }
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: #f9fafb;
+            padding: 15px;
+        }
+        .mermaid text {
+            font-family: inherit !important;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
     
@@ -249,6 +303,16 @@
             </span>
         </li>
         <!--放 文章-->
+        
+            
+            <li>
+              <span class="archive-date">&nbsp;&nbsp;&nbsp;2026/04/24 
+              </span>
+              <div class="archive-main">
+                
+                  <a class="archive-title" href="/2026/04/24/%E6%95%B0%E5%AD%A6%E5%92%8C%E5%9B%BE%E8%A1%A8%E6%B5%8B%E8%AF%95/">数学公式和Mermaid测试</a>
+              </div>
+            </li>
         
             
             <li>

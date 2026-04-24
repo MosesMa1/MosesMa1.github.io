@@ -89,6 +89,60 @@
         };
     </script>
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Mermaid diagram support -->
+    <script async src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        if (typeof mermaid !== 'undefined') {
+            mermaid.initialize({ 
+                startOnLoad: true,
+                theme: 'neutral',
+                logLevel: 'warn',
+                securityLevel: 'loose',
+                flowchart: {
+                    useMaxWidth: true,
+                    htmlLabels: true,
+                    curve: 'linear'
+                },
+                graph: {
+                    useMaxWidth: true
+                },
+                gitGraph: {
+                    useMaxWidth: true
+                },
+                sequence: {
+                    useMaxWidth: true,
+                    mirrorActors: true
+                },
+                sequenceDiagram: {
+                    actorFontSize: 14,
+                    labelBoxBkColor: '#f0f0f0',
+                    noteBkColor: '#fff8e1'
+                }
+            });
+            mermaid.contentLoaded();
+        }
+    </script>
+    <!-- Mermaid 美化CSS -->
+    <style>
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            font-family: inherit;
+        }
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: #f9fafb;
+            padding: 15px;
+        }
+        .mermaid text {
+            font-family: inherit !important;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
     
@@ -263,7 +317,7 @@
                     
                         &nbsp; | &nbsp;
                     
-                     <span>字数总计：105</span>
+                     <span>字数总计：101</span>
                 
                 
                     
@@ -298,7 +352,17 @@
 <li><input disabled type="checkbox"> 阅读50本书</li>
 <li><input disabled type="checkbox"> 健身</li>
 </ul>
-<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    P[📋 Plan 计划] --&gt; D[⚙️ Do 执行]</span><br><span class="line">    D --&gt; C[🔍 Check 检查]</span><br><span class="line">    C --&gt; A[🔁 Act 处理]</span><br><span class="line">    A --&gt; P</span><br><span class="line">    </span><br><span class="line">    %% 样式美化</span><br><span class="line">    style P fill:#e3f2fd,stroke:#1976d2</span><br><span class="line">    style D fill:#f3e5f5,stroke:#7b1fa2</span><br><span class="line">    style C fill:#fff3e0,stroke:#f57c00</span><br><span class="line">    style A fill:#e8f5e9,stroke:#388e3c</span><br></pre></td></tr></table></figure>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><pre class="mermaid">graph TD
+    P[📋 Plan 计划] --> D[⚙️ Do 执行]
+    D --> C[🔍 Check 检查]
+    C --> A[🔁 Act 处理]
+    A --> P
+    
+    %% 样式美化
+    style P fill:#e3f2fd,stroke:#1976d2
+    style D fill:#f3e5f5,stroke:#7b1fa2
+    style C fill:#fff3e0,stroke:#f57c00
+    style A fill:#e8f5e9,stroke:#388e3c</pre>
 
 
 
@@ -337,6 +401,8 @@
             
     
             <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/2026/04/24/%E6%95%B0%E5%AD%A6%E5%92%8C%E5%9B%BE%E8%A1%A8%E6%B5%8B%E8%AF%95/'>数学公式和Mermaid测试</a></span>
                 
 
                 
